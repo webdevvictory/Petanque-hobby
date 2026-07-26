@@ -20,6 +20,12 @@ body {
     color: #475c3f;
 }
 
+.nav-link.active {
+    color: #4b6543;
+    font-weight: 600;
+    border-bottom: 2px solid #c7852c;
+}
+
 .nav-link {
     color: #30352f;
     margin-left: 25px;
@@ -34,15 +40,16 @@ body {
     display: flex;
     align-items: center;
     background-image:
-            linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.55)),
+            linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.5)),
             url("../img/Petanque_Game.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center bottom;
 }
 
 .hero-content {
     color: white;
     text-align: center;
+    margin-bottom: 16em;
 }
 
 .hero h1 {
@@ -129,7 +136,10 @@ body {
 }
 
 .hobby-image {
+    display: block;
     width: 100%;
+    height: 350px;
+    object-fit: cover;
     border-radius: 12px;
 }
 
